@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table id="table" border="1">
+        <tr>
+          <td>Raj</td>
+          <td>Project Manager</td>
+        </tr>
+        <tr>
+          <td>Arun</td>
+          <td>Project Leader</td>
+        </tr>
+        <tr>
+          <td>Akash</td>
+          <td>Team Leader</td>
+        </tr>
+        <tr>
+          <td>Athiban</td>
+          <td>Module Leader</td>
+        </tr>
+        <tr>
+          <td>Gowtham</td>
+          <td>Senior Engineer</td>
+        </tr>
+        <tr>
+          <td>Babu</td>
+          <td>Project Trainee</td>
+        </tr>
+        <tr>
+          <td>Hariharan</td>
+          <td>Quality Analyst</td>
+        </tr>
+        <tr>
+          <td>JeyaKumar</td>
+          <td>Architect</td>
+        </tr>
+      </table>
+
+      <input
+        type="text"
+        id="one"
+        
+      />
+      <input
+        type="text"
+        id="two"
+      
+      />
+    </div>
+    <script>
+      var table = document.getElementById("table");
+      for (var i = 1; i < table.rows.length; i++) {
+        table.rows[i].onclick = function() {
+          document.getElementById("one").value = this.cells[0].innerHTML;
+          document.getElementById("two").value = this.cells[1].innerHTML;
+        };
+      }
+    </script>
+  </body>
+</html>
